@@ -39,6 +39,7 @@ img {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -115,8 +116,8 @@ ion-icon {
   border: 1.7px white solid;
   padding: 1rem;
   font-size: 1.3rem;
-  font-family: josefin sans, sans-serif;
-  font-weight: 100;
+  font-family: Alata, sans-serif;
+  font-weight: 300;
 }
 
 .header-text span {
@@ -148,11 +149,169 @@ ion-icon {
   margin: 2rem 0;
   padding: 2rem 1.5rem;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section2 h1 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+.section2 span {
+  display: block;
+}
+
+.section2-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section2-image {
+  position: relative;
+}
+
+.section2-image a {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  color: white;
+  font-family: josefin sans, sans-serif;
+  font-size: 2rem;
+}
+
+button {
+  padding: 5px 40px;
+  text-transform: uppercase;
+  font-family: Alata, sans-serif;
+  background: white;
+  border: 2px solid black;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background: black;
+}
+
+footer {
+  background: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0;
+}
+
+.footer-item {
+  color: #8c8c8c;
+  font-family: josefin sans, sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.footer-item:hover {
+  color: white;
+}
+
+.socials {
+  margin-bottom: 1rem;
+}
+
+.socials a {
+  color: white;
+  margin-right: 20px;
+}
+
+.socials ion-icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.copyrights {
+  color: #8c8c8c;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 728px) {
+  .section2 {
+    padding: 0 4rem;
+  }
+  .section2-images {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem 4rem 0;
+  }
+  footer .footer-section1 {
+    text-align: start;
+  }
+  footer .footer-section2 {
+    text-align: end;
+  }
+  footer .footer-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem 0 0;
+  }
+  footer .footer-item {
+    margin-right: 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
