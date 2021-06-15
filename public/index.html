@@ -51,14 +51,17 @@
       </div>
     </nav>
     <div class="header-text">
-      <h1> <span>Immersive</span> <span>experiences</span> <span>that</span> <span>deliver</span></h1>
+      <h1> <span>Immersive</span> <span>experiences</span> <span class="remove-block">that</span> <span>deliver</span>
+      </h1>
     </div>
   </header>
 
   <main>
-    <section>
+    <section class="section1 ">
       <picture>
-        <img class="section1-image" src="/images/mobile/image-interactive.jpg" alt="interactive-img">
+        <source media="(max-width: 728px)" srcset="/images/mobile/image-interactive.jpg">
+        <source media="(min-width: 728px)" srcset="/images/desktop/image-interactive.jpg">
+        <img class="section1-image" src="/images/desktop/image-interactive.jpg" alt="interactive-img">
       </picture>
 
       <div class="section1-content">
@@ -72,77 +75,103 @@
 
     <section class="section2">
       <h1> Our creations</h1>
+      <div class="section2-images">
 
-      <div>
-        <a href="#">
-          <picture><img src="/images/mobile/image-deep-earth.jpg" alt=""></picture>Deep earth
-        </a>
-      </div>
+        <picture class="section2-image">
+          <source media="(max-width: 728px)" srcset="/images/mobile/image-deep-earth.jpg">
+          <source media="(min-width: 728px)" srcset="/images/desktop/image-deep-earth.jpg">
+          <img src="/images/desktop/image-deep-earth.jpg" alt="">
+          <a href="#"><span>Deep</span> Earth</a>
+        </picture>
 
-      <div class="section2-item">
-        <picture><img src="/images/mobile/image-night-arcade.jpg" alt=""></picture>
-        <a href="#">Night arcade</a>
-      </div>
+        <picture class="section2-image">
+          <source media="(max-width: 728px)" srcset="/images/mobile/image-night-arcade.jpg">
+          <source media="(min-width: 728px )" srcset="/images/desktop/image-night-arcade.jpg">
+          <img src="/images/desktop/image-night-arcade.jpg" alt="">
+          <a href="#"><span>Night</span> Arcade</a>
+        </picture>
 
-      <div>
-        <picture><img src="/images/mobile/image-soccer-team.jpg" alt=""></picture>
-        <a href="#">Soccer Team VR</a>
-      </div>
+        <picture class="section2-image">
+          <source media="(max-width: 728px)" srcset="/images/mobile/image-soccer-team.jpg">
+          <source media="(min-width: 728px )" srcset="/images/desktop/image-soccer-team.jpg">
+          <img src="/images/desktop/image-soccer-team.jpg" alt="">
+          <a href="#"><span>soccer</span> team vr</a>
+        </picture>
 
-      <div>
-        <picture><img src="/images/mobile/image-grid.jpg" alt=""></picture>
-        <a href="#">The Grid</a>
-      </div>
+        <picture class="section2-image">
+          <source media="(max-width: 728px)" srcset="/images/mobile/image-grid.jpg">
+          <source media="(min-width: 728px )" srcset="/images/desktop/image-grid.jpg">
+          <img src="/images/desktop/image-grid.jpg" alt="">
+          <a href="#"><span>the </span> grid</a>
+        </picture>
 
-      <div>
-        <picture><img src="/images/mobile/image-from-above.jpg" alt=""></picture>
-        <a href="#">From up above VR</a>
-      </div>
+        <picture class="section2-image">
+          <source media="(max-width: 728px)" srcset="/images/mobile/image-from-above.jpg">
+          <source media="(min-width: 728px )" srcset="/images/desktop/image-from-above.jpg">
+          <img src="/images/desktop/image-from-above.jpg" alt="">
+          <a href="#"><span>from up </span> above vr</a>
+        </picture>
 
-      <div>
-        <picture><img src="/images/mobile/image-pocket-borealis.jpg" alt=""></picture>
-        <a href="#">Pocket Borealis</a>
-      </div>
+        <picture class="section2-image">
+          <source media="(max-width: 728px)" srcset="/images/mobile/image-pocket-borealis.jpg">
+          <source media="(min-width: 728px )" srcset="/images/desktop/image-pocket-borealis.jpg">
+          <img src="/images/desktop/image-pocket-borealis.jpg" alt="">
+          <a href="#"><span>Pocket </span> borealis</a>
+        </picture>
 
-      <div>
-        <picture><img src="/images/mobile/image-curiosity.jpg" alt=""></picture>
-        <a href="#">The curiosity</a>
-      </div>
+        <picture class="section2-image">
+          <source media="(max-width: 728px)" srcset="/images/mobile/image-curiosity.jpg">
+          <source media="(min-width: 728px )" srcset="/images/desktop/image-curiosity.jpg">
+          <img src="/images/desktop/image-curiosity.jpg" alt="">
+          <a href="#"><span>the </span> curiosity</a>
+        </picture>
 
-      <div>
-        <picture><img src="/images/mobile/image-fisheye.jpg" alt=""></picture>
-        <a href="#">Make it fisheye</a>
+        <picture class="section2-image">
+          <source media="(max-width: 728px)" srcset="/images/mobile/image-fisheye.jpg">
+          <source media="(min-width: 728px )" srcset="/images/desktop/image-fisheye.jpg">
+          <img src="/images/desktop/image-fisheye.jpg" alt="">
+          <a href="#"><span>make it </span> fisheye</a>
+        </picture>
+
       </div>
       <button> See all</button>
     </section>
   </main>
 
   <footer>
-    <div>
-      <div>
-        <img src="" alt="">
+    <div class="footer-section1">
+      <div class="logo">
+        <h3>loopstudios</h3>
       </div>
 
       <div>
-        <ul>
-          <a href="">About</a>
-          <a href="">Careers</a>
-          <a href="">Events</a>
-          <a href="">Products</a>
-          <a href="">Support</a>
+        <ul class="footer-items">
+          <a class="footer-item" href="#">About</a>
+          <a class="footer-item" href="#">Careers</a>
+          <a class="footer-item" href="#">Events</a>
+          <a class="footer-item" href="#">Products</a>
+          <a class="footer-item" href="#">Support</a>
         </ul>
       </div>
     </div>
 
-    <div>
+    <div class="footer-section2">
       <div class="socials">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+        <a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-pinterest"></ion-icon>
+        </a>
       </div>
 
-      <p>&#169; Loopstudios. All right reserved.</p>
+      <p class="copyrights">&#169; Masho Ado. All right reserved.</p>
     </div>
   </footer>
 
