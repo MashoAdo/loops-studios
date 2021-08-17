@@ -375,8 +375,8 @@ footer {
   }
   .section1-content {
     position: absolute;
-    right: 40px;
-    bottom: 60px;
+    top: 270px;
+    right: 70px;
     z-index: 100;
     width: 650px;
     background: white;
@@ -419,6 +419,12 @@ footer {
   }
   footer .footer-item {
     margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section1-content {
+    right: 200px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
