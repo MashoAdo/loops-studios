@@ -307,14 +307,16 @@ footer {
 		display: flex;
 		flex-direction: row;
 		position: relative;
+		
 		img {
 			width: 700px;
 		}
 	}
+
 	.section1-content {
 		position: absolute;
-		right: 40px;
-		bottom: 60px;
+		top: 270px;
+		right: 70px;
 		z-index: 100;
 		width: 650px;
 		background: $White;
@@ -346,5 +348,10 @@ footer {
 		.footer-item {
 			margin-right: 1rem;
 		}
+	}
+}
+@media screen and (min-width:1200px) {
+	.section1-content{
+		right: 200px;
 	}
 }
