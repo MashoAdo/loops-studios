@@ -49,7 +49,7 @@ header {
   height: 100vh;
   position: relative;
   background-repeat: no-repeat;
-  background-image: url(/images/mobile/image-hero.jpg);
+  background-image: url(../images/mobile/image-hero.jpg);
   background-size: cover;
   color: white;
   margin-bottom: 6rem;
@@ -298,7 +298,7 @@ footer {
   header {
     padding: 0 6.5rem;
     height: 100vh;
-    background: url(/images/desktop/image-hero.jpg);
+    background: url(../images/desktop/image-hero.jpg);
   }
   header .menu-btn {
     display: none;

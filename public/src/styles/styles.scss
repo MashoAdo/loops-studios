@@ -59,7 +59,7 @@ header {
 	height: 100vh;
 	position: relative;
 	background-repeat: no-repeat;
-	background-image: url(/images/mobile/image-hero.jpg);
+	background-image: url(../images/mobile/image-hero.jpg);
 	background-size: cover;
 	color: $White;
 	margin-bottom: 6rem;
@@ -253,7 +253,7 @@ footer {
 	header {
 		padding: 0 6.5rem;
 		height: 100vh;
-		background: url(/images/desktop/image-hero.jpg);
+		background: url(../images/desktop/image-hero.jpg);
 		.menu-btn {
 			display: none;
 		}
@@ -307,7 +307,7 @@ footer {
 		display: flex;
 		flex-direction: row;
 		position: relative;
-		
+
 		img {
 			width: 700px;
 		}
@@ -350,8 +350,8 @@ footer {
 		}
 	}
 }
-@media screen and (min-width:1200px) {
-	.section1-content{
+@media screen and (min-width: 1200px) {
+	.section1-content {
 		right: 200px;
 	}
 }
